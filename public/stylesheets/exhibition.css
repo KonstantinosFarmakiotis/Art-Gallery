@@ -1,0 +1,208 @@
+.album{
+  background-image: url("exhibition_background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.border{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px;
+    transition-delay: 3s;
+}
+
+/* slider */
+.img-slider{
+  position:relative;
+  width: 60%;
+  height: 500px;
+  margin: 10px;
+  background: #1D212B;
+}
+
+.img-slider .slide{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider .slide img{
+  z-index: 1;
+  width: 100%;
+  height: 500px;
+}
+
+.img-slider .slide .info{
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+.img-slider .slide .info h2{
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  width: 250px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.img-slider .slide .info p{
+  color: #000000;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.img-slider .navigation{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+  background: rgb(255, 255, 255);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 90%;
+  cursor: pointer;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.img-slider .navigation .btn.active{
+  background: rgb(22, 178, 184);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+
+/* room card */
+
+.card{
+  background: rgba(255, 255, 255, 0.8);
+  border:2px solid rgb(124, 123, 122);
+}
+
+.card-image{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content .card-img-top{
+  transition: transform .3s;
+  height: 400px;
+  width: 100%;
+}
+
+.card-img-top:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.card .edit{
+  position: absolute;
+  top:0rem; right:0rem;
+  cursor: pointer;
+  font-size: 0.5rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.card .edit:hover{
+  background-color: rgb(231, 150, 56);
+}
+
+.card .delete{
+  position: absolute;
+  top:0rem; left:0rem;
+  cursor: pointer;
+  font-size: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(216, 118, 118);
+  z-index: 10;
+}
+
+.card .delete:hover{
+  background-color: red;
+}
+
+.card .hide{
+  display: none;
+}
+
+/* modal */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 99; 
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .container{
+  position: absolute;
+  background-color: #fefefe;
+  text-align: center;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.close-modal{
+  font-weight: bold;
+  color: #7a7a7a;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+color: #363434;
+cursor: pointer;
+}
+
+.modal .deletebtn {
+  background-color: rgb(216, 118, 118);
+  border-radius: 5px;
+}
+
+.modal .cancelbtn {
+  border-radius: 5px;
+}
+
+.modal .deletebtn:hover {
+  background-color: red;
+}

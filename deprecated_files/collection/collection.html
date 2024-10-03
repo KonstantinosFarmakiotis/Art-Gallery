@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="collection.js" defer></script>
+    <link rel = "stylesheet" href = "collection.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="album py-4 bg-light">
+    <div class="container">
+      <div class="row mb-4 justify-content-center">
+        <div class=" col-md-6 col-sm-6">
+          <div class="search-box row">
+            <input type="text" placeholder="search collection" id="search-box">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <div class="select-menu filter-menu">
+            <div class="select-btn filter-btn">
+              <span class="filter-sBtn-text m-2">Filters</span>
+            </div>
+            <ul class="options">
+              <li class="option filter-option">
+                  <span class="option-text">All</span>
+              </li>
+              <li class="option filter-option">
+                  <span class="option-text">Recent</span>
+              </li>
+              <li class="option filter-option">
+                <span class="option-text">Genre</span>
+              </li>
+              <li class="option filter-option">
+                  <span class="option-text">...</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <div class="select-menu show-menu">
+            <div class="select-btn show-btn">
+              <span class="show-sBtn-text m-2">No of artworks</span>
+            </div>
+            <ul class="options">
+              <li class="option show-option">
+                  <span class="option-text">12</span>
+              </li>
+              <li class="option show-option">
+                  <span class="option-text">24</span>
+              </li>
+              <li class="option show-option">
+                <span class="option-text">48</span>
+              </li>
+              <li class="option show-option">
+                  <span class="option-text">60</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="container">
+      <div class="row">
+
+        <!-- Card element -->
+        <div class="card-content col-lg-4 col-md-6 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-4 box-shadow">
+            <button class="edit">Edit</button>
+            <div class="row d-flex justify-content-center card-title">
+              "guernica"
+            </div>
+            <div class="card-img-container">
+              <img class="card-img-top" src="images/Zuck_sketch.jpg" alt="zuck 1">
+            </div>
+            <div class="row justify-content-center info m-1">
+              <a href="" class="col-12 author">
+                author name asndaksndkjansjd
+              </a>
+              <div class="col genre-year">
+                minimalism 2018
+              </div>
+            </div>
+            <div class="card-body text-truncate-container">
+              <p class="card-text mb-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="card-preview">
+            <div class="card box-shadow">
+              <button class="close">X</button>
+              <div class="row d-flex justify-content-center card-title">
+                "guernica"
+              </div>
+              <div class="card-img-container">
+                <img class="card-img-top" src="images/Zuck_sketch.jpg" alt="zuck 1">
+              </div>
+              <div class="card-body text-truncate-container">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content col-lg-4 col-md-6 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-4 box-shadow">
+            <button class="edit">Edit</button>
+            <div class="row d-flex justify-content-center card-title">
+              "guernica"
+            </div>
+            <div class="card-img-container">
+              <img class="card-img-top" src="images/1.jpg" alt="1">
+            </div>      
+            <div class="row justify-content-center info m-1">
+              <a href="" class="col-12 author">
+                author name asndaksndkjansjd
+              </a>
+              <div class="col genre-year">
+                minimalism 2018
+              </div>
+            </div>      
+            <div class="card-body text-truncate-container">
+              <p class="card-text mb-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="card-preview">
+            <div class="card box-shadow">
+              <button class="close">X</button>
+              <div class="row d-flex justify-content-center card-title">
+                "guernica"
+              </div>
+              <div class="card-img-container">
+                <img class="card-img-top" src="images/1.jpg" alt="1">
+              </div> 
+              <div class="card-body text-truncate-container">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content col-lg-4 col-md-6 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-4 box-shadow">
+            <button class="edit">Edit</button>
+            <div class="row d-flex justify-content-center card-title">
+              "guernica"
+            </div>
+            <div class="card-img-container">
+              <img class="card-img-top" src="images/2.jpg" alt="2">
+            </div>   
+            <div class="row justify-content-center info m-1">
+              <a href="" class="col-12 author">
+                author name asndaksndkjansjd
+              </a>
+              <div class="col genre-year">
+                minimalism 2018
+              </div>
+            </div>         
+            <div class="card-body text-truncate-container">
+              <p class="card-text mb-4">
+                This is a wider card with supporting text below as a natural lead-in to additional content.This content is a little bit longer. Or 
+                Waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay Longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="card-preview">
+            <div class="card box-shadow">
+              <button class="close">X</button>
+              <div class="row d-flex justify-content-center card-title">
+                "guernica"
+              </div>
+              <div class="card-img-container">
+                <img class="card-img-top" src="images/2.jpg" alt="2">
+              </div>  
+              <div class="card-body text-truncate-container">
+                <p class="card-text">
+                  Waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay Longer.
+                  Waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay Longer.
+                  Waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay Longer.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content col-lg-4 col-md-6 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-4 box-shadow">
+            <button class="edit hide">Edit</button>
+            <div class="row d-flex justify-content-center card-title">
+              "guernica"
+            </div>
+            <div class="card-img-container">
+              <img class="card-img-top" src="images/3.jpg" alt="3">
+            </div>
+            <div class="row justify-content-center info m-1">
+              <a href="" class="col-12 author">
+                author name asndaksndkjansjd
+              </a>
+              <div class="col genre-year">
+                minimalism 2018
+              </div>
+            </div>
+            <div class="card-body text-truncate-container">
+              <p class="card-text mb-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="card-preview">
+            <div class="card box-shadow">
+              <button class="close">X</button>
+              <div class="row d-flex justify-content-center card-title">
+                "guernica"
+              </div>
+              <div class="card-img-container">
+                <img class="card-img-top" src="images/3.jpg" alt="3">
+              </div> 
+              <div class="card-body text-truncate-container">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content col-lg-4 col-md-6 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-4 box-shadow">
+            <button class="edit">Edit</button>
+            <div class="row d-flex justify-content-center card-title">
+              "guernica"
+            </div>
+            <div class="card-img-container">
+              <img class="card-img-top" src="images/4.jpg" alt="4">
+            </div>
+            <div class="row justify-content-center info m-1">
+              <a href="" class="col-12 author">
+                author name asndaksndkjansjd
+              </a>
+              <div class="col genre-year">
+                minimalism 2018
+              </div>
+            </div>
+            <div class="card-body text-truncate-container">
+              <p class="card-text mb-4">
+                This is a wider card with supporting text below as a natural lead-in to additional content.This content is a little bit longer. Or 
+                Waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay Longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="card-preview">
+            <div class="card box-shadow">
+              <button class="close">X</button>
+              <div class="row d-flex justify-content-center card-title">
+                "guernica"
+              </div>
+              <div class="card-img-container">
+                <img class="card-img-top" src="images/4.jpg" alt="4">
+              </div>
+              <div class="card-body text-truncate-container">
+                <p class="card-text">Text mary</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content col-lg-4 col-md-6 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-4 box-shadow">
+            <button class="edit hide">Edit</button>
+            <div class="row d-flex justify-content-center card-title">
+              "guernica"
+            </div>
+            <div class="card-img-container">
+              <img class="card-img-top" src="images/5.jpg" alt="5">
+            </div>
+            <div class="row justify-content-center info m-1">
+              <a href="" class="col-12 author">
+                author name asndaksndkjansjd
+              </a>
+              <div class="col genre-year">
+                minimalism 2018
+              </div>
+            </div>
+            <div class="card-body text-truncate-container">
+              <p class="card-text mb-4">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="card-preview">
+            <div class="card box-shadow">
+              <button class="close">X</button>
+              <div class="row d-flex justify-content-center card-title">
+                "guernica"
+              </div>
+              <div class="card-img-container">
+                <img class="card-img-top" src="images/5.jpg" alt="5">
+              </div>  
+              <div class="card-body text-truncate-container">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content col-lg-4 col-md-6 col-sm-6 d-flex align-items-stretch">
+          <div class="card mb-4 box-shadow">
+            <button class="edit">Edit</button>
+            <div class="row d-flex justify-content-center card-title">
+              "guernica"
+            </div>
+            <div class="card-img-container">
+              <img class="card-img-top" src="images/6.jpg" alt="6">
+            </div>
+            <div class="row justify-content-center info m-1">
+              <a href="" class="col-12 author">
+                author name asndaksndkjansjd
+              </a>
+              <div class="col genre-year">
+                minimalism 2018
+              </div>
+            </div>
+            <div class="card-body text-truncate-container">
+              <p class="card-text mb-4">
+                This is a wider card with supporting text below as a natural lead-in to additional content.This content is a little bit longer. Or 
+                Waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaay Longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="preview-container">
+          <div class="card-preview">
+            <div class="card box-shadow">
+              <button class="close">X</button>
+              <div class="row d-flex justify-content-center card-title">
+                "guernica"
+              </div>
+              <div class="card-img-container">
+                <img class="card-img-top" src="images/6.jpg" alt="6">
+              </div>  
+              <div class="card-body text-truncate-container">
+                <p class="card-text">Text mary</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+
+      <div class="pagination">
+        <div class="list mx-auto">
+      </div>
+
+    </div>
+  </div>
+    
+        
+
+</body>
+</html>
